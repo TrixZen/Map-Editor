@@ -1,0 +1,38 @@
+simple-2d-tile-editor/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── view/
+│   │   │   │   ├── MapFrame.java         // Үндсэн JFrame
+│   │   │   │   ├── MapMenuBar.java       // JMenuBar бүтээгч
+│   │   │   │   ├── MapPanel.java         // Гол сүлжээний JPanel
+│   │   │   │   ├── ControlPanel.java     // Хажуугийн удирдлагын JPanel
+│   │   │   │   ├── SelectedPanel.java    // Доорх сонгосон элемент харуулах JPanel
+│   │   │   ├── controller/
+│   │   │   │   ├── MapController.java    // Үндсэн удирдлагын логик
+│   │   │   │   ├── ActionHandler.java    // Товчлууруудын үйлдлийг зохицуулах
+│   │   │   ├── model/
+│   │   │   │   ├── Tile.java             // Нэгж Tile-ийн өгөгдлийн модель
+│   │   │   │   ├── MapData.java          // Map-ийн өгөгдлийн модель
+│   │   │   ├── Main.java                 // Програм эхлүүлэх
+│   │   ├── resources/
+│   │       ├── icons/
+│   │       │   ├── up.png                // Дээш хөдөлгөөний дүрс
+│   │       │   ├── down.png              // Доош хөдөлгөөний дүрс
+│   │       │   ├── left.png              // Зүүн хөдөлгөөний дүрс
+│   │       │   ├── right.png             // Баруун хөдөлгөөний дүрс
+│   │       │   ├── zoom_in.png           // Zoom In дүрс
+│   │       │   ├── zoom_out.png          // Zoom Out дүрс
+│   │       ├── styles/
+│   │           ├── theme.properties      // UI-ийн өнгө болон тохиргоо
+│   │       ├── application.properties    // Програмын үндсэн тохиргоо (хэрэв шаардлагатай бол)
+├── src/
+│   ├── test/
+│   │   ├── java/
+│   │       ├── model/
+│   │       │   ├── MapDataTest.java      // Map өгөгдлийг тестлэх
+│   │       │   ├── TileTest.java         // Tile өгөгдлийг тестлэх
+│   │       ├── controller/
+│   │           ├── MapControllerTest.java // Логикийн тест
+├── pom.xml                                // Maven-ийн төслийн тохиргоо
+├── README.md                              // Төслийн танилцуулга
